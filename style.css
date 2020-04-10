@@ -1,0 +1,45 @@
+
+.header{
+    background: linear-gradient(to top left, #045f7e 0%, #ff25d3 100%);
+    padding: 365px;
+    border-radius: 30px;
+    
+
+}
+h1 {
+    display: block;
+    float: left;
+}
+
+.login{
+    
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 300px;
+    padding:50px 120px;
+    position: absolute;
+    left:550px;
+    top:100px;
+    
+
+}
+.design{
+    
+    position: absolute;
+    left:60px;
+    top:400px;
+    
+
+}
+.submit {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px 50px;
+    
+
+}
+input{
+    border-radius: 30px; 
+    padding: 10px; 
+    background-color: rgb(10, 10, 10); 
+    color:blanchedalmond;
+
+}

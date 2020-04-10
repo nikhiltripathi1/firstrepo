@@ -1,0 +1,156 @@
+body{
+    display: grid;
+    grid-template-columns: 60% auto;
+    grid-template-rows: 230px 80px auto 360px 800px 40px;
+    grid-template-areas: "head head" "nav nav" "main sidebar" "activity activity" "contact contact" "footer footer";
+
+}
+header, main, aside, footer{
+   
+    padding: 0px;
+}
+
+header{
+    background-image: url("https://indianmoney.com/images/business-insurance.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+    font-size: 50px;
+    display: flex;
+    flex-direction: row;
+    font-family: inherit;
+    text-align: left;
+    color: white;
+    grid-area: head;
+    margin-bottom: 5px;
+    padding: 20px;
+  
+    
+}
+div.nav{
+    display: flex;
+    flex-direction: row;
+    background-color: rgba(0,0,0,0.8);
+    border-radius: 40px;
+    grid-area: nav;
+    margin-bottom: 5px;
+    position: sticky;
+    top: 40px;
+}
+a{
+    color:white;
+    padding:30px;
+}
+h2{
+    color: white;
+    margin-left: 20px;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    border-radius: 30px;
+    grid-area: main;
+    margin-right: 5px;
+    
+}
+div.main-flex{
+    margin-bottom: 5px;
+    background: linear-gradient(to left,   rgb(248, 2, 2) 0%, rgb(72, 0, 240) 100%);
+    border-radius: 30px;
+}
+aside{
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+    grid-area: sidebar;
+}
+div.hob{
+    display: flex;
+    flex-direction: row;
+    background: linear-gradient(to right, rgb(228, 82, 82) 0%, rgb(111, 111, 241) 100%);
+    border-radius: 50px;
+    grid-area: hobby;
+    margin-bottom: 5px;
+
+}
+footer{
+    
+    grid-area: footer;
+    margin-top: 5px;
+}
+abbr{
+    text-decoration: none;
+}
+div.activity{
+    display: grid;
+    grid-template-rows: 40px auto;
+    grid-template-areas: "act-head" "act-content";
+    grid-area: activity;
+}
+.activity-heading{
+    background-color: rgba(0,0,0,0.8);
+    border-radius: 40px;
+    margin-bottom: 5px;
+}
+.activity-content{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 5px;
+}
+.activity-content-box{
+    background: linear-gradient(to bottom, black 0%, white 100%);
+    border-radius: 20px;
+    margin-right: 5px;
+    margin:10px;
+    padding: 20px;
+    
+
+}
+.act-head{
+    color: white; 
+    text-align: center; 
+    margin: 0px;
+}
+div.contact{
+    display: grid;
+    grid-template-rows: 40px auto;
+    grid-template-areas: "contactt-head" "contactt-content";
+    grid-area: contact;
+
+}
+.contact-heading{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.contact-content{
+    display: flex;
+    flex-direction: column;
+    float: center;
+    margin-top: 40px;
+
+}
+.contact-content-info{
+      
+      margin-top: 20px;
+      text-align: center;
+
+}
+
+.contact-content-info img{
+    
+    width:100px;
+    height: 100px;
+}
+.contact-content-info h3{
+    text-decoration: underline;
+    color: teal; 
+    text-align: center;
+}
+.contact-content-info a{
+    text-decoration: underline;
+    color: teal; 
+    margin: 20px 500px;
+    text-align: center;
+
+}
