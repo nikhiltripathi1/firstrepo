@@ -1,95 +1,139 @@
 body{
+    margin: 0px;
     display: grid;
-    grid-template-columns: 60% auto;
-    grid-template-rows: 230px 80px auto 360px 800px 40px;
-    grid-template-areas: "head head" "nav nav" "main sidebar" "activity activity" "contact contact" "footer footer";
+    grid-template-rows: 80px 700px auto 1000px 500px 500px;
+    grid-template-areas:  "nav""home" "main ""aside" "activity " "contact " ;
 
 }
-header, main, aside, footer{
-   
-    padding: 0px;
-}
 
-header{
-    background-image: url("https://indianmoney.com/images/business-insurance.jpg");
+#home{
+    background-color: black;
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: right;
-    font-size: 50px;
-    display: flex;
-    flex-direction: row;
-    font-family: inherit;
-    text-align: left;
+    grid-area: home;
+    align-items: center;
     color: white;
-    grid-area: head;
     margin-bottom: 5px;
-    padding: 20px;
+    padding: 50px;
   
     
 }
-div.nav{
+
+#home-wrapper{
+    border: seashell solid 20px;
+    padding: 90px 40px;
     display: flex;
     flex-direction: row;
-    background-color: rgba(0,0,0,0.8);
-    border-radius: 40px;
+}
+
+nav{
+    display: flex;
+    background-color: white;
     grid-area: nav;
-    margin-bottom: 5px;
-    position: sticky;
-    top: 40px;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+}
+.name{
+    display: flex;
+    float: left;
+}
+.links{
+    display: flex;
+    list-style: none;
+    margin-right: 30px;
 }
 a{
-    color:white;
-    padding:30px;
+    padding: 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #04d6fc;
+    text-decoration: none;
 }
+a:hover, a:active{
+    color: rgb(255, 254, 254);
+    background: rgba(0,0,0,0.8);
+    padding: 50px;
+
+}
+
 h2{
-    color: white;
+    color: rgb(3, 3, 3);
     margin-left: 20px;
 }
 main{
     display: flex;
     flex-direction: column;
-    border-radius: 30px;
     grid-area: main;
-    margin-right: 5px;
+    margin-top: 40px;
     
 }
 div.main-flex{
-    margin-bottom: 5px;
-    background: linear-gradient(to left,   rgb(248, 2, 2) 0%, rgb(72, 0, 240) 100%);
-    border-radius: 30px;
+    margin: 5px;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
 }
+.main-flex ul{
+    display: flex;
+    list-style: none;
+
+}
+#edu ul li{
+   background: rgba(0,0,0,0.8);
+   justify-content: space-between;
+   color: rgb(248, 111, 14);
+   margin-right: 5px;
+   padding: 40px;
+}
+#edu{
+    margin: 40px;
+    background-image: url("/images/edu.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 120px 150px;
+}
+#skill{
+  
+    display: inline-flex;
+}
+#skill ul li{
+   
+    border: rgb(173, 55, 11) solid;
+    color: rgb(207, 54, 15);
+    margin: 10px;
+    padding: 60px;
+   
+}
+
 aside{
     display: flex;
     flex-direction: column;
     padding: 0px;
-    grid-area: sidebar;
+    grid-area: aside;
 }
 div.hob{
     display: flex;
     flex-direction: row;
-    background: linear-gradient(to right, rgb(228, 82, 82) 0%, rgb(111, 111, 241) 100%);
-    border-radius: 50px;
     grid-area: hobby;
-    margin-bottom: 5px;
+
 
 }
-footer{
-    
-    grid-area: footer;
-    margin-top: 5px;
+.hob h1{
+    font-size: 100px; font-family: monospace; color: rgb(252, 250, 247); margin-left: 30px;
 }
+
 abbr{
     text-decoration: none;
 }
 div.activity{
     display: grid;
-    grid-template-rows: 40px auto;
+    grid-template-rows: 100px auto;
     grid-template-areas: "act-head" "act-content";
     grid-area: activity;
 }
 .activity-heading{
-    background-color: rgba(0,0,0,0.8);
-    border-radius: 40px;
+    
     margin-bottom: 5px;
 }
 .activity-content{
@@ -98,8 +142,7 @@ div.activity{
     margin-bottom: 5px;
 }
 .activity-content-box{
-    background: linear-gradient(to bottom, black 0%, white 100%);
-    border-radius: 20px;
+    border: black solid;
     margin-right: 5px;
     margin:10px;
     padding: 20px;
@@ -107,50 +150,39 @@ div.activity{
 
 }
 .act-head{
-    color: white; 
+    color: black; 
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     text-align: center; 
-    margin: 0px;
+    margin: 20px;
 }
 div.contact{
-    display: grid;
-    grid-template-rows: 40px auto;
-    grid-template-areas: "contactt-head" "contactt-content";
+    display: flex;
+    flex-direction: column;
+    background-color: black;
     grid-area: contact;
+    margin-top: 15px;
 
 }
 .contact-heading{
     margin-top: 20px;
     margin-bottom: 20px;
+
 }
 
 .contact-content{
-    display: flex;
-    flex-direction: column;
-    float: center;
-    margin-top: 40px;
-
-}
-.contact-content-info{
-      
-      margin-top: 20px;
-      text-align: center;
-
-}
-
-.contact-content-info img{
+    display: inline-flex;
+    align-items: flex-end;
     
-    width:100px;
-    height: 100px;
-}
-.contact-content-info h3{
-    text-decoration: underline;
-    color: teal; 
-    text-align: center;
-}
-.contact-content-info a{
-    text-decoration: underline;
-    color: teal; 
-    margin: 20px 500px;
-    text-align: center;
 
 }
+.contact-content a{
+    width: 40px;
+    height: 40px;
+    padding: 5px;
+    background-color: rgb(248, 248, 248);
+    border-radius: 40px;
+    margin:10px 20px;
+}
+
+
+
