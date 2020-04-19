@@ -4,13 +4,14 @@
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <link rel="stylesheet" href="css/style.css" type="text/CSS"/>
-        <script src="javascript/script.js" ></script>
+        <script defer src="javascript/script.js" >
+        
+        </script>
                 <title>
             LOGIN
         </title>
        
-        <link rel = "icon" href = "images/icon.png"
-        type = "image/x-icon">
+        <link rel = "icon" href = "images/icon.png" type = "image/x-icon">
     </head>
     <body>
         
@@ -26,7 +27,7 @@
                     <h1 style="font-family: monospace; font-size: 30px; color: orange; display: block; float: left;">USER</h1>
                     <h1 style="font-family: monospace; font-size: 30px; color: black; display: block; float: right;">LOGIN</h1>
                 </div>
-                <form name="login" action="../html/homepage.html" onsubmit="return validatorForm();">
+                <form name="login" action="homepage.html" onsubmit="return validatorForm();">
                     
                     <input name="username"type="text" id="username" placeholder="username" style="text-align: center;" required/><br><br>
                     <input name="pass" type="password" id="password" placeholder="password" style="text-align: center;" required/><br><br>
