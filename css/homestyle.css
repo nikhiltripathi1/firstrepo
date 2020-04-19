@@ -88,7 +88,7 @@ div.main-flex{
 }
 #edu{
     margin: 40px;
-    background-image: url("../images/edu.jpg");
+    background-image: url("/images/edu.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     padding: 120px 150px;
