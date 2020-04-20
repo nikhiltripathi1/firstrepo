@@ -11,15 +11,23 @@ function validatorForm() {
     }
     else if(password.value === "") {
         document.getElementById("error").innerHTML="*Password Require";
+        username.style.border= "silver solid";
         password.style.border= "red solid";
         return false;
     }
     else if(confirmpass.value === "") {
         document.getElementById("error").innerHTML="*Please Confirm your Password";
+        username.style.border= "silver solid";
+        password.style.border= "silver solid";
         confirmpass.style.border= "red solid";
         return false;
     }
-    else if(password.value.length<8){
+    else {
+        username.style.border= "silver solid";
+        password.style.border= "silver solid";
+        confirmpass.style.border= "silver solid";
+        
+        if(password.value.length<8){
         document.getElementById("error").innerHTML="";
         alert("password must be 8 character long");
         return false ;
@@ -37,4 +45,5 @@ function validatorForm() {
         alert("no user from this name, please try with valid ID/PASSWORD \nto get one time access, take your cursor to user icon");
     return false;
     }
+}
 }
