@@ -2,7 +2,7 @@ let username=document.getElementById("username");
 let password=document.getElementById("password");
 let confirmpass=document.getElementById("confrm");
 const Name="nikhil tripathi";
-const pass="iAmAWEbDeveloper";
+const pass="1234567890";
 function validatorForm() {
     if(username.value === "") {
         document.getElementById("error").innerHTML="*Username Require";
@@ -25,7 +25,7 @@ function validatorForm() {
         return false ;
     }
     else if(password.value!=confirmpass.value){
-        alert("password donot matched!!!  \nplease try again");
+        alert("password didn't matched!!!  \nPlease try again");
         return false ;
     }
     else if(username.value === Name && password.value === pass){
